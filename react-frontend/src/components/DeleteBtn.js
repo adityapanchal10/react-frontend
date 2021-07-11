@@ -16,7 +16,7 @@ export class DeleteBtn extends Component {
 		event.preventDefault();
 		this.setState({ del: true });
 		console.log("delete: " + this.state.id);
-		axios.delete("/api/" + this.state.id, this.state.record).then((res) => {
+		axios.delete("https://safe-retreat-89188.herokuapp.com/api/" + this.state.id, this.state.record).then((res) => {
 			console.log(res.data + "deleted");
 			this.props.handler();
 		});
