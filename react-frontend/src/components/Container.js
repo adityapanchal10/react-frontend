@@ -17,6 +17,12 @@ export class Container extends Component {
 		});
 		console.log("state changed");
 		// setTimeout(window.location.reload(), 8000);
+		function refreshPage() {
+    			setTimeout(()=>{
+        			window.location.reload(false);
+    			}, 5000);
+    			console.log('page to reload')
+		}
 	}
 
 	showModal = () => {
