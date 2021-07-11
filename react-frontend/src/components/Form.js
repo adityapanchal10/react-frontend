@@ -103,6 +103,7 @@ export class Form extends Component {
 			console.log(record);
 
 			if (this.state.flag === 0) {
+				console.log("inserting !");
 				axios.post("https://safe-retreat-89188.herokuapp.com/api", record).then((res) => {
 					console.log(res.data + " inserted");
 				});
