@@ -35,7 +35,7 @@ export default class Table extends Component {
 
 	updoot = () => {
 		axios
-			.get("/api")
+			.get("https://safe-retreat-89188.herokuapp.com/api")
 			.then((response) => {
 				this.setState({ records: response.data });
 				console.log("table: " + response.data);
@@ -48,7 +48,7 @@ export default class Table extends Component {
 	componentDidMount() {
 		console.log("mounted");
 		axios
-			.get("http://localhost:4000/api")
+			.get("https://safe-retreat-89188.herokuapp.com/api")
 			.then((response) => {
 				this.setState({ records: response.data });
 				console.log("table: " + response.data);
