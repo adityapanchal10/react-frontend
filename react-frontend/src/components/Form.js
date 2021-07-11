@@ -36,12 +36,12 @@ export class Form extends Component {
 			errors["name"] = "Cannot be empty";
 		}
 
-		if (typeof fields["name"] !== "undefined") {
+		/* if (typeof fields["name"] !== "undefined") {
 			if (!fields["name"].match(/^[a-zA-Z]+$/)) {
 				formIsValid = false;
 				errors["name"] = "Only letters";
 			}
-		}
+		} */
 
 		//Email
 		if (!fields["email"]) {
