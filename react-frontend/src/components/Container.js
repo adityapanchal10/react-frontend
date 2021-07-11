@@ -16,7 +16,7 @@ export class Container extends Component {
 			flag: !this.state.flag,
 		});
 		console.log("state changed");
-		setTimeout(window.location.reload(), 8000);
+		// setTimeout(window.location.reload(), 8000);
 	}
 
 	showModal = () => {
